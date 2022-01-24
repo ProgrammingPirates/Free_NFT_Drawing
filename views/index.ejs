@@ -1,5 +1,6 @@
 <html lang="en">
 
+       
 <%- include("./partials/head.ejs") %>
 
 <body>
@@ -11,14 +12,15 @@
         <div class="card-body">
             <% if(drawings.length != 0)  { %>
                 <div class="drawings">
-                    <h3 class="card-title"> Drawings</h3>
+                    
+                    <h3 type="button" class="btn btn-lg btn-primary" class="card-title">Instruction:😅कुछ Drawing करने ✍️ के लिए पहले Sign in, उसके बाद 👇 New Drawing पर क्लिक करें !</h3>
                     <div class="new_drawing">
-                        <a class="btn btn-dark" href="/drawing/new">New drawing</a>
+                        <a type="button" class="btn btn-outline-success" class="btn btn-dark" href="/drawing/new">Click for New Drawing✍🏼</a>
                     </div>
                     <div class="card-body">
                         <button class="btn btn-dark" onclick="toggle()">Filters</button>
                         <div id="toggle-obj" style="display: none;">
-                            <p class="card-text"> Sort by: <a href="/">most liked</a> | <a href="/new">newest first</a> | <a href="/old">oldest first</a></p>
+                            <p class="card-text outline"> Sort by: <br/> <a type="button" class="btn btn-danger" href="/">most liked</a> | <a type="button" class="btn btn-warning" href="/new">newest first</a> | <a type="button" class="btn btn-success" href="/old">oldest first</a></p>
                         </div>               
                     </div>
                     <% drawings.forEach(drawing => { %>

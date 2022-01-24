@@ -2,19 +2,29 @@
 	class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
 >
 	<!-- Logo -->
-	<h5 class="my-0 mr-md-auto font-weight-normal"><img src="/favicon.png" height="50px"><b>NFT Insta Drawing</b> </h5>
+	<h5 class="my-0 mr-md-auto font-weight-normal"><img src="/favicon.png" height="50px"><b>NFT Drawing</b> </h5>
 	<!-- Links -->
 	
 	<!-- Sign in button -->
 	<% if(user === "undefined") { %>
-		<a class="btn btn-outline-dark" href="/auth/google">Sign in</a>
+		<a type="button" class="btn btn-outline-primary" class="btn btn-outline-dark" href="/auth/google">Sign in</a>
 	<% } else { %>
-		<nav class="my-2 my-md-0 mr-md-3">
-			<a class="p-2 text-dark" href="/">Home</a>
-			<a class="p-2 text-dark" href="/user">Profile</a>
-			<a class="p-2 text-dark" href="/settings">Settings</a>
-			<a class="p-2 text-dark" href="/auth/logout">Logout</a>
-			<a href="/user/"><img src="<%= user.image %>" height="40px" width="40px"/></a>
+		
+			<nav class="navbar navbar-light bg-light justify-content-between">
+			
+		
+			<a type="button" class="btn btn-outline-success" class="p-2 text-dark" href="/">Home</a>
+			<a type="button" class="btn btn-outline-success" class="p-2 text-dark" href="/user">Profile</a>
+			<a type="button" class="btn btn-outline-success"class="p-15 text-dark" href="/settings">Settings</a>
+			<button type="button" class="btn btn-danger">Coin</button>
+			<button type="button" class="btn btn-warning">Select Currency</button>
+			<a href="https://getbootstrap.com/docs/5.0/components/button-group/" type="button" class="btn btn-success">Connect MetaMask</a>
+  
+   
+  
+  
+			<a type="button" class="btn btn-outline-success"class="p-2 text-dark" href="/auth/logout">Logout</a>
+			<a type="button" class="btn btn-outline-success" href="/user/"><img src="<%= user.image %>" height="40px" width="40px"/></a>
 		</nav>
 	<% } %>
 </div>
