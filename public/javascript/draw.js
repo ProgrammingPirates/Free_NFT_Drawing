@@ -34,14 +34,18 @@ const eraser = () => {
 function setPosition(e) {
     pos.x = e.clientX
     pos.y = e.clientY
+    
+    
 }
 
 // resize canvas
 function resize() {
-    ctx.canvas.width = 500
-    ctx.canvas.height = 500
+    
+    ctx.canvas.width = 700
+    ctx.canvas.height = 700
     ctx.fillStyle = 'white'
     ctx.fillRect(0, 0, canvas.width, canvas.height)
+   
 }
 
 function draw(e) {
