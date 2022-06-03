@@ -14,6 +14,6 @@ A NFT-art marketplace where you can create new NFTs and trade them with others. 
 ## Challenges I ran into
 ![3](https://user-images.githubusercontent.com/78801686/150967845-aaabf306-4590-41e8-8baf-ace7e91c944e.jpeg)
 
-many problem i faced this hackathon time in my project but i solve it, problem like that connect metamask, select currency,blockchain trade,real time nft access.
+many problem i faced during this hackathon time in my project but i solve it, problem like that connect metamask, select currency,blockchain trade,real time nft access.
 
 
