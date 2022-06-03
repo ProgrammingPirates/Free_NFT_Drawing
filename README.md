@@ -1,5 +1,4 @@
 # Free_NFT_Drawing
-![4](https://user-images.githubusercontent.com/78801686/150967827-213bfdca-b074-4eff-80db-767cf65079f9.jpeg)
 
 ## Project Name
 
